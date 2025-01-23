@@ -1,21 +1,19 @@
 import java.util.Scanner;
 
-public class ques5L1 {
+public class ques5L1{
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        double[] heights = new double[11];
-        System.out.println("Enter the heights of 11 players (in meters):");
-        for (int i = 0; i < heights.length; i++) {
-            System.out.print("Player " + (i + 1) + ": ");
-            heights[i] = scanner.nextDouble();
+        System.out.print("Enter a number: ");
+        int number = scanner.nextInt();
+        int[] multiplicationResults = new int[4]; 
+        for (int i = 0; i < 4; i++) {
+            multiplicationResults[i] = number * (i + 6); 
         }
-        double sum = 0;
-        for (double height : heights) {
-            sum += height;
+        System.out.println("Multiplication table of " + number + " from 6 to 9:");
+        for (int i = 0; i < 4; i++) {
+            System.out.println(number + " x " + (i + 6) + " = " + multiplicationResults[i]);
         }
-        double meanHeight = sum / heights.length;
-        System.out.println("Mean height of the football team: " + meanHeight + " meters");
-
         scanner.close();
     }
 }
