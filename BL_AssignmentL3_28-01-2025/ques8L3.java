@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ques8L3 {
+public class CalendarDisplay {
 
     public static String getMonthName(int month) {
         String[] months = {
@@ -44,7 +44,7 @@ public class ques8L3 {
         for (int day = 1; day <= daysInMonth; day++) {
             System.out.printf("%3d ", day);
             if ((day + firstDay) % 7 == 0) {
-                System.out.println();
+                System.out.println(); 
             }
         }
         System.out.println();
