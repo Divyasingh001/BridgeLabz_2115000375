@@ -1,29 +1,24 @@
 import java.util.Scanner;
-class ques1{
-	
-	public static void main(String args[]){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("enter the first String");
-		String str1=sc.next();
-		System.out.println("Enter the second string");
-		String str2=sc.next();
-	    boolean equalsResult=str1.equals(str2);
-    
-		boolean charAtResult=compareStringUsingcharAt(str1,str2);
-		 System.out.println("Comparison using charAt method: " + charAtResult);
-        System.out.println("Comparison using equals method: " + equalsResult);
-        System.out.println("Results match: " + (charAtResult == equalsResult));
-	}
-		public static boolean compareStringUsingcharAt(String string1,String string2){
-			if(string1.length()!=string2.length()){
-				return false;
-			}
-			for(int i=0;i<string1.length();i++){
-				if(string1.charAt(i)!=string2.charAt(i)){
-					return false;
-				}
-			}
-			return true;
-			}
-		}
-	
+
+public class ques1{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+        scanner.close();
+        int vowels = 0, consonants = 0;
+        String lowerCaseInput = input.toLowerCase();
+        
+        for (char ch : lowerCaseInput.toCharArray()) {
+            if (ch >= 'a' && ch <= 'z') {
+                if ("aeiou".indexOf(ch) != -1) {
+                    vowels++;
+                } else {
+                    consonants++;
+                }
+            }
+        }
+        System.out.println("Vowels: " + vowels);
+        System.out.println("Consonants: " + consonants);
+    }
+}
