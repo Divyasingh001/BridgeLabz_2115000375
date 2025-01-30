@@ -1,21 +1,32 @@
 import java.util.Scanner;
 
-public class ques{
+public class LongestWord {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a sentence: ");
-        String input = scanner.nextLine();
-        scanner.close();
+        String sentence = scanner.nextLine();
+        System.out.println(findLongestWord(sentence));
+    }
 
-        String[] words = input.split("\\s+");
-        String longestWord = "";
+    public static String findLongestWord(String sentence) {
+        String longestWord = "", currentWord = "";
+        int maxLength = 0, currentLength = 0;
 
-        for (String word : words) {
-            if (word.length() > longestWord.length()) {
-                longestWord = word;
+        for (int i = 0; i < sentence.length(); i++) {
+            char ch = sentence.charAt(i);
+
+            if (ch != ' ') {
+                currentWord += ch;
+                currentLength++;
+            } else {
+                if (currentLength > maxLength) {
+                    maxLength = currentLength;
+                    longestWord = currentWord;
+                }
+                currentWord = "";
+                currentLength = 0;
             }
         }
 
-        System.out.println("Longest word: " + longestWord);
+        return longestWord;
     }
 }
