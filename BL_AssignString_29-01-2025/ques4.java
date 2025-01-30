@@ -1,18 +1,27 @@
 import java.util.Scanner;
-class ques4{
-	public static void main(String args[]){
-		Scanner sc=new Scanner(System.in);
-		System.out.println("enter the string");
-		String input=sc.nextLine();
-		sc.close();
-		StringBuilder result=new StringBuilder();
-		boolean seen[] =new boolean[256];
-		for (char ch:input.toCharArray()){
-			if(!seen[ch]){
-				seen[ch]=true;
-				result.append(ch);
-			}
-		}
-		System.out.println("String after removing duplicates:"+result);
-	}
+
+public class RemoveDuplicates {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str = scanner.nextLine();
+        String result = "";
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            boolean found = false;
+
+            for (int j = 0; j < result.length(); j++) {
+                if (result.charAt(j) == ch) {
+                    found = true;
+                    break;
+                }
+            }
+
+            if (!found) {
+                result += ch;
+            }
+        }
+
+        System.out.println(result);
+    }
 }
