@@ -1,21 +1,32 @@
 import java.util.Scanner;
 
-public class ques6{
+public class SubstringOccurrences {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter the main string: ");
-        String mainString = scanner.nextLine();
-        System.out.print("Enter the substring: ");
-        String subString = scanner.nextLine();
-        scanner.close();
+        String str = scanner.nextLine();
+        String subStr = scanner.nextLine();
+        System.out.println(countOccurrences(str, subStr));
+    }
 
-        int count = 0, index = 0;
+    public static int countOccurrences(String str, String subStr) {
+        int count = 0;
+        int subStrLength = subStr.length();
 
-        while ((index = mainString.indexOf(subString, index)) != -1) {
-            count++;
-            index += subString.length();
+        for (int i = 0; i <= str.length() - subStrLength; i++) {
+            boolean match = true;
+
+            for (int j = 0; j < subStrLength; j++) {
+                if (str.charAt(i + j) != subStr.charAt(j)) {
+                    match = false;
+                    break;
+                }
+            }
+
+            if (match) {
+                count++;
+            }
         }
 
-        System.out.println("Occurrences: " + count);
+        return count;
     }
 }
