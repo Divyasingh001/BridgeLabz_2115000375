@@ -7,7 +7,6 @@ public class CompareStrings {
         String str2 = scanner.nextLine();
         System.out.println(compareStrings(str1, str2));
     }
-
     public static int compareStrings(String str1, String str2) {
         int len1 = str1.length();
         int len2 = str2.length();
