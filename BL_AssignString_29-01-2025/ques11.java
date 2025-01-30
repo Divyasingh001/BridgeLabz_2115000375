@@ -9,7 +9,6 @@ public class AnagramCheck {
         
         System.out.print("Enter second string: ");
         String str2 = scanner.nextLine();
-        
         if (areAnagrams(str1, str2)) {
             System.out.println("The strings are anagrams.");
         } else {
