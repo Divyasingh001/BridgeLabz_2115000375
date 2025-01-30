@@ -5,8 +5,6 @@ public class MostFrequentCharacter {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
         System.out.println(findMostFrequentCharacter(str));
-    }
-
     public static char findMostFrequentCharacter(String str) {
         int maxCount = 0;
         char mostFrequentChar = '\0';
