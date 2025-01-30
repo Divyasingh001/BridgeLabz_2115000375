@@ -1,41 +1,35 @@
 import java.util.Scanner;
 
-public class ques8 {
+public class CompareStrings {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter first string: ");
         String str1 = scanner.nextLine();
-        System.out.print("Enter second string: ");
         String str2 = scanner.nextLine();
-        scanner.close();
+        System.out.println(compareStrings(str1, str2));
+    }
 
-        int minLength = Math.min(str1.length(), str2.length());
-        int result = 0;
+    public static int compareStrings(String str1, String str2) {
+        int len1 = str1.length();
+        int len2 = str2.length();
+        int minLength = len1 < len2 ? len1 : len2;
 
         for (int i = 0; i < minLength; i++) {
-            if (str1.charAt(i) < str2.charAt(i)) {
-                result = -1;
-                break;
-            } else if (str1.charAt(i) > str2.charAt(i)) {
-                result = 1;
-                break;
+            char ch1 = str1.charAt(i);
+            char ch2 = str2.charAt(i);
+
+            if (ch1 < ch2) {
+                return -1;
+            } else if (ch1 > ch2) {
+                return 1;
             }
         }
 
-        if (result == 0) {
-            if (str1.length() < str2.length()) {
-                result = -1;
-            } else if (str1.length() > str2.length()) {
-                result = 1;
-            }
-        }
-
-        if (result == -1) {
-            System.out.println("\"" + str1 + "\" comes before \"" + str2 + "\" in lexicographical order.");
-        } else if (result == 1) {
-            System.out.println("\"" + str1 + "\" comes after \"" + str2 + "\" in lexicographical order.");
+        if (len1 < len2) {
+            return -1;
+        } else if (len1 > len2) {
+            return 1;
         } else {
-            System.out.println("Both strings are equal.");
+            return 0;
         }
     }
 }

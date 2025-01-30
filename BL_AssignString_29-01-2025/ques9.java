@@ -1,24 +1,32 @@
 import java.util.Scanner;
 
-public class ques9 {
+public class MostFrequentCharacter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a string: ");
-        String input = scanner.nextLine();
-        scanner.close();
+        String str = scanner.nextLine();
+        System.out.println(findMostFrequentCharacter(str));
+    }
 
-        int[] freq = new int[256];
+    public static char findMostFrequentCharacter(String str) {
         int maxCount = 0;
         char mostFrequentChar = '\0';
 
-        for (char ch : input.toCharArray()) {
-            freq[ch]++;
-            if (freq[ch] > maxCount) {
-                maxCount = freq[ch];
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            int count = 0;
+
+            for (int j = 0; j < str.length(); j++) {
+                if (str.charAt(j) == ch) {
+                    count++;
+                }
+            }
+
+            if (count > maxCount) {
+                maxCount = count;
                 mostFrequentChar = ch;
             }
         }
 
-        System.out.println("Most Frequent Character: '" + mostFrequentChar + "'");
+        return mostFrequentChar;
     }
 }
