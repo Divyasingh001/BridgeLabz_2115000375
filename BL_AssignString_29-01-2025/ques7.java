@@ -6,7 +6,6 @@ public class ToggleCase {
         String str = scanner.nextLine();
         System.out.println(toggleCase(str));
     }
-
     public static String toggleCase(String str) {
         String result = "";
 
