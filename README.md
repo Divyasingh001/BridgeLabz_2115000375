@@ -53,3 +53,12 @@ b. Solved questions on class variables and instance variables.
 c. Learnt about "extends" keyword for inheritance and solved questions on it.
 d. Learnt about classes and subclasses while solving questions on inheritance.
 
+Day9 - 04/02/25
+Today, I worked on multiple Java programs that reinforced key Object-Oriented Programming (OOP)
+ concepts such as static variables, final variables, this keyword, and instance
+of checks through real-world applications.
+ Below is a summary of the programs I implemented:
+a. Implemented a Student Management System using OOP concepts such as static variables, final variables, and instanceof checks.
+b. Implemented a Vehicle Registration System with static methods, final registration numbers, and instanceof checks before displaying vehicle details.
+c. Implemented a Hospital Management System to manage patient data, using static variables for hospital names, final patient IDs, and instanceof checks before displaying patient information.
+d. Practiced and reinforced concepts like static methods, final variables, this keyword, and instanceof checks through real-world applications.
