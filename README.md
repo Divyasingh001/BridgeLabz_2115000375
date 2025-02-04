@@ -45,3 +45,11 @@ Day7 - 31/01/25
 a. Learnt about basic OOPs concepts like class, objects, encapsulation, polymorphism, etc.
 b. Solved Questions on OOPs problems
 c. Explored how Oops can be used in real development.# BridgeLabz_2115000375
+
+Day8 - 02/02/25
+
+a. Learnt difference between class variables and instance variables.
+b. Solved questions on class variables and instance variables.
+c. Learnt about "extends" keyword for inheritance and solved questions on it.
+d. Learnt about classes and subclasses while solving questions on inheritance.
+
