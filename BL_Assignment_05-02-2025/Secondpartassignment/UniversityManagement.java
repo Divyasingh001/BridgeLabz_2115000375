@@ -1,93 +1,107 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class Faculty {
+class Product {
     private String name;
+    private double price;
 
-    public Faculty(String name) {
+    public Product(String name, double price) {
         this.name = name;
+        this.price = price;
     }
 
     public String getName() {
         return name;
     }
-}
 
-class Department {
-    private String departmentName;
-
-    public Department(String departmentName) {
-        this.departmentName = departmentName;
+    public double getPrice() {
+        return price;
     }
 
-    public String getDepartmentName() {
-        return departmentName;
+    @Override
+    public String toString() {
+        return name + " ($" + price + ")";
     }
 }
 
-class University {
-    private String universityName;
-    private List<Department> departments;
-    private List<Faculty> faculties;   
+class Order {
+    private static int orderCounter = 1;
+    private int orderId;
+    private List<Product> products;
+    private Customer customer;
 
-    public University(String universityName) {
-        this.universityName = universityName;
-        this.departments = new ArrayList<>();
-        this.faculties = new ArrayList<>();
+    public Order(Customer customer) {
+        this.orderId = orderCounter++;
+        this.customer = customer;
+        this.products = new ArrayList<>();
     }
 
-    public void addDepartment(String deptName) {
-        departments.add(new Department(deptName));
+    public void addProduct(Product product) {
+        products.add(product);
     }
-    public void addFaculty(Faculty faculty) {
-        if (!faculties.contains(faculty)) {
-            faculties.add(faculty);
+
+    public void displayOrderDetails() {
+        System.out.println("Order ID: " + orderId + " | Customer: " + customer.getName());
+        System.out.println("Products:");
+        double total = 0;
+        for (Product p : products) {
+            System.out.println("- " + p);
+            total += p.getPrice();
         }
-    }
-
-    public void displayDepartments() {
-        System.out.println("Departments in " + universityName + ":");
-        for (Department dept : departments) {
-            System.out.println("- " + dept.getDepartmentName());
-        }
-    }
-
-    public void displayFaculties() {
-        System.out.println("Faculty members in " + universityName + ":");
-        for (Faculty faculty : faculties) {
-            System.out.println("- " + faculty.getName());
-        }
-    }
-
-    public void deleteUniversity() {
-        System.out.println("Deleting University: " + universityName);
-        departments.clear();  
-        System.out.println("All departments removed.");
+        System.out.println("Total Price: $" + total);
+        System.out.println("-----------------------------");
     }
 }
 
-public class UniversityManagement {
+class Customer {
+    private String name;
+    private List<Order> orders;
+
+    public Customer(String name) {
+        this.name = name;
+        this.orders = new ArrayList<>();
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void placeOrder(Order order) {
+        orders.add(order);
+    }
+
+    public void showOrderHistory() {
+        System.out.println(name + "'s Order History:");
+        for (Order order : orders) {
+            order.displayOrderDetails();
+        }
+    }
+}
+public class ECommercePlatform {
     public static void main(String[] args) {
-        
-        University university = new University("Tech University");
+   
+        Product laptop = new Product("Laptop", 1000);
+        Product phone = new Product("Smartphone", 700);
+        Product headset = new Product("Headset", 150);
 
-     
-        Faculty profJohn = new Faculty("Prof. John");
-        Faculty profAlice = new Faculty("Prof. Alice");
+        Customer alice = new Customer("Alice");
+        Customer bob = new Customer("Bob");
 
-        university.addFaculty(profJohn);
-        university.addFaculty(profAlice);
+        Order order1 = new Order(alice);
+        order1.addProduct(laptop);
+        order1.addProduct(phone);
+        alice.placeOrder(order1);
 
-        university.addDepartment("Computer Science");
-        university.addDepartment("Mechanical Engineering");
+        Order order2 = new Order(bob);
+        order2.addProduct(headset);
+        bob.placeOrder(order2);
 
-        university.displayFaculties();
-        university.displayDepartments();
+        Order order3 = new Order(alice);
+        order3.addProduct(headset);
+        order3.addProduct(phone);
+        alice.placeOrder(order3);
 
-        university.deleteUniversity();
-
-        System.out.println("Faculty members still exist after University deletion:");
-        System.out.println("- " + profJohn.getName());
-        System.out.println("- " + profAlice.getName());
+        alice.showOrderHistory();
+        bob.showOrderHistory();
     }
 }
