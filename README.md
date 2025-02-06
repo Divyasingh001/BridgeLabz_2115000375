@@ -65,3 +65,11 @@ c. Implemented a Hospital Management System to manage patient data, using static
 d. Practiced and reinforced concepts like static methods, final variables, this keyword, and instanceof checks through real-world applications.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Day10 - 05/02/25
+
+Learned about Class Diagrams, Object Diagrams, and Sequence Diagrams.
+Explored how different UML diagrams represent object-oriented concepts.
+Practiced designing class diagrams for real-world applications.
+Implemented object and sequence diagrams to represent interactions between objects.
+Understood the importance of UML diagrams in software design and development
+ ---------------------------------------------------------------------------------------------------------------------------------------------------
