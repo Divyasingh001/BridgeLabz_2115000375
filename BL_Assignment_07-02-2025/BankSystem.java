@@ -72,7 +72,6 @@ class FixedDepositAccount extends BankAccount {
 }
 public class BankSystem {
     public static void main(String[] args) {
-        
         SavingsAccount savings = new SavingsAccount("SA12345", 5000.00, 3.5);
         savings.displayAccountType();
         savings.displayAccountDetails();
