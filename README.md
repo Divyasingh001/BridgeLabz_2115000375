@@ -73,3 +73,32 @@ Practiced designing class diagrams for real-world applications.
 Implemented object and sequence diagrams to represent interactions between objects.
 Understood the importance of UML diagrams in software design and development
  ---------------------------------------------------------------------------------------------------------------------------------------------------
+Day 11 - 07/02/25
+ 
+Advanced Java OOP & Hybrid Inheritance
+Today, I worked on multiple Java programs that reinforced Inheritance, Polymorphism, and Hybrid Inheritance through real-world applications:
+
+ Animal Hierarchy
+Implemented an Animal superclass and subclasses: Dog, Cat, and Bird.
+Overrode makeSound() in each subclass to demonstrate method overriding.
+Used polymorphism to call makeSound() dynamically.
+ Employee Management System
+Implemented Employee as a superclass and subclasses: Manager, Developer, and Intern.
+Introduced attributes like teamSize (for Manager) and programmingLanguage (for Developer).
+Overrode displayDetails() to show unique employee information.
+ Vehicle Management System (Hybrid Inheritance)
+Created a Vehicle superclass with maxSpeed and fuelType.
+Implemented ElectricVehicle and PetrolVehicle as subclasses.
+Created an interface Refuelable, which PetrolVehicle implements.
+Demonstrated hybrid inheritance by making PetrolVehicle extend Vehicle while implementing Refuelable.
+ Library Management System
+Designed a Book superclass and an Author subclass.
+Overrode displayInfo() to print book and author details.
+ Smart Home System
+Created a Device superclass with deviceId and status.
+Implemented Thermostat as a subclass with temperatureSetting.
+Overrode displayStatus() to display unique device information.
+ Restaurant System (Hybrid Inheritance)
+Created a Person superclass.
+Defined a Worker interface with a performDuties() method.
+Implemented Chef and Waiter subclasses that inherit from Person and implement Worker, showcasing multiple inheritance through interfaces.
