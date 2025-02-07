@@ -65,7 +65,6 @@ public class VechicleMain {
             new Truck(120, "Diesel", 15),
             new Motorcycle(180, "Petrol", false)
         };
-
         for (Vehicle v : vehicles) {
             v.displayInfo();
             System.out.println("-------------------");
