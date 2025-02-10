@@ -102,3 +102,39 @@ Overrode displayStatus() to display unique device information.
 Created a Person superclass.
 Defined a Worker interface with a performDuties() method.
 Implemented Chef and Waiter subclasses that inherit from Person and implement Worker, showcasing multiple inheritance through interfaces.
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Day-12-10-02-2025
+
+On this day, I delved into advanced Object-Oriented Programming (OOP) concepts in Java, with a focus on inheritance, polymorphism, and hybrid inheritance. I implemented several practical applications to reinforce these concepts.
+Activities and Implementations:
+Animal Hierarchy:
+Created an Animal superclass with makeSound() method.
+Implemented subclasses: Dog, Cat, and Bird.
+Demonstrated method overriding by overriding makeSound() in each subclass.
+Used polymorphism to call makeSound() dynamically.
+Employee Management System:
+Created an Employee superclass and subclasses: Manager, Developer, and Intern.
+Added attributes like teamSize for Manager and programmingLanguage for Developer.
+Overrode displayDetails() to showcase unique employee information.
+Vehicle Management System (Hybrid Inheritance):
+Designed a Vehicle superclass with maxSpeed and fuelType.
+Implemented ElectricVehicle and PetrolVehicle as subclasses.
+Created an interface Refuelable, implemented by PetrolVehicle.
+Demonstrated hybrid inheritance: PetrolVehicle extends Vehicle and implements Refuelable.
+Library Management System:
+Created a Book superclass and an Author subclass.
+Overrode displayInfo() to print book and author details.
+Smart Home System:
+Created a Device superclass with deviceId and status.
+Implemented a Thermostat subclass with temperatureSetting.
+Overrode displayStatus() to display unique device information.
+Restaurant System (Hybrid Inheritance):
+Created a Person superclass.
+Defined a Worker interface with a performDuties() method.
+Implemented Chef and Waiter subclasses that inherit from Person and implement Worker.
+Showcased multiple inheritance through interfaces.
+Mastered advanced OOP concepts like inheritance, polymorphism, and hybrid inheritance.
+
+Implemented real-world applications to reinforce theoretical knowledge.
+
+Explored multiple inheritance in Java using interfaces.
