@@ -138,3 +138,29 @@ Mastered advanced OOP concepts like inheritance, polymorphism, and hybrid inheri
 Implemented real-world applications to reinforce theoretical knowledge.
 
 Explored multiple inheritance in Java using interfaces.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Day 13 11_02_2025
+
+Data Structure-Based Management Systems
+This project collection includes various management systems implemented using linked lists (Singly, Doubly, and Circular) in Java. Each system is designed for efficient data handling and operations.
+
+ Singly Linked List: Student Records Management
+A system to manage student records, allowing addition, deletion, searching, updating, and displaying student data.
+ Doubly Linked List: Movie Management System
+A movie database that supports insertion, deletion, searching by director/rating, and displaying movies in both forward and reverse order.
+ Circular Linked List: Task Scheduler
+A scheduler that organizes tasks, allowing task insertion, deletion, searching, and circular traversal for continuous scheduling.
+ Singly Linked List: Inventory Management System
+Manages an inventory by adding, removing, updating, searching items, calculating total inventory value, and sorting based on name or price.
+ Doubly Linked List: Library Management System
+A system to manage books by adding, removing, searching, updating availability, counting books, and displaying data in both orders.
+ Circular Linked List: Round Robin CPU Scheduling
+Simulates a round-robin CPU scheduling algorithm, managing process execution based on a fixed time quantum and calculating performance metrics.
+ Singly Linked List: Social Media Friend Connections
+Handles friend connections, mutual friends, searching users, and counting friends using a linked list-based structure.
+ Doubly Linked List: Undo/Redo in Text Editor
+Implements an undo/redo functionality where each state of text is stored, allowing navigation through previous and next versions.
+ Circular Linked List: Online Ticket Reservation System
+A ticket booking system that allows adding, removing, searching, and displaying reservations in a circular queue format.
+
+
