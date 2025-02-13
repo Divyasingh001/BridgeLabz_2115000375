@@ -1,5 +1,4 @@
 import java.util.HashMap;
-
 public class LongestConsecutivesequence {
    public static int LongestSequence(int [] nums){
    if(nums==null||nums.length==0){
