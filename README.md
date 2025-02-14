@@ -164,3 +164,26 @@ Implements an undo/redo functionality where each state of text is stored, allowi
 A ticket booking system that allows adding, removing, searching, and displaying reservations in a circular queue format.
 
 
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day14 - 13_02_2025
+
+a. Learnt about Stack and Queues and solved questions like implementing Queue using stack,Sort a Stack Using Recursion, etc.
+b. Learnt about HashMap and Hash Functions and solved questions like Target sum, Two sum, etc. 
+c. Learnt about java inbuilt Data structures stack, queue , hashmap in collection framework.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day15 - 14_02_2025
+
+Learnt about Bubble Sort and implemented it to sort student marks.
+Learnt about Insertion Sort and used it to sort employee IDs.
+Practiced Merge Sort by sorting an array of book prices.
+Implemented Quick Sort for sorting product prices in an e-commerce application.
+Explored Selection Sort and used it to sort exam scores.
+Studied Heap Sort and applied it to sort job applicants by salary demands.
+Implemented Counting Sort to efficiently sort student ages.
+Analyzed the time and space complexities of these sorting algorithms.
+Explored real-world applications of sorting techniques in different domains.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
