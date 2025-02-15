@@ -187,3 +187,11 @@ Analyzed the time and space complexities of these sorting algorithms.
 Explored real-world applications of sorting techniques in different domains.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day16 -14_02_2025
+
+Learnt all the basic about sorting and searching 
+Algorithm of shorting include -Merge sort,Insertion sort,Selection sort,Bubblesort,Radix sort
+etc and algorithms of searching like Linear Search and Binary Search and solved the problems related to it.
+Learned about Buffered reader,Inputstream as well as fileReader and solved  multiple question related to it
+
