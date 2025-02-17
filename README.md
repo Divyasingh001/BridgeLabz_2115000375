@@ -188,10 +188,26 @@ Explored real-world applications of sorting techniques in different domains.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
-Day16 -14_02_2025
+Day16 -15_02_2025
 
 Learnt all the basic about sorting and searching 
 Algorithm of shorting include -Merge sort,Insertion sort,Selection sort,Bubblesort,Radix sort
 etc and algorithms of searching like Linear Search and Binary Search and solved the problems related to it.
 Learned about Buffered reader,Inputstream as well as fileReader and solved  multiple question related to it
 
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day17-17_02_2025
+
+Today’s Learning & Practice on Complexity
+Today, I explored and solved problems related to algorithmic complexity:
+Search Algorithms: Compared Linear Search (O(N)) vs Binary Search (O(log N)).
+Sorting Algorithms: Analyzed Bubble Sort (O(N²)), Merge Sort (O(N log N)), and Quick Sort (O(N log N)).
+String Concatenation: Tested performance of String (O(N²)), StringBuilder (O(N)), and StringBuffer (O(N)).
+File Reading Efficiency: Compared FileReader (O(N)) vs InputStreamReader (O(N)).
+Fibonacci Computation: Recursive (O(2ⁿ)) vs Iterative (O(N)) approach.
+Data Structure Search: Benchmarked Array (O(N)), HashSet (O(1)), and TreeSet (O(log N)).
+Key takeaway: Choosing the right algorithm and data structure significantly impacts performance!
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
