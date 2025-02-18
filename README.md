@@ -211,3 +211,14 @@ Key takeaway: Choosing the right algorithm and data structure significantly impa
 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day 18_18-02-2025
+
+Today's Learning and practice on generics
+Today ,I explored and solved problems relaed to generics such as many of the questions
+like management system where class is abstract or generic of type T which
+extends only the keywords or attributes present to subclass of T.
+Prepared the class to display all the information.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
