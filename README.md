@@ -222,3 +222,13 @@ Prepared the class to display all the information.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 
+Day 19-19-02-2025
+
+Today's learning and practice is about collections
+Today,I explored and solved problems related to collections like hashset,hashmap,linkedlist-hashmap,
+TreeSet etc .
+Solved all the questions relaed to set ,queue,collections and its extended type.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
