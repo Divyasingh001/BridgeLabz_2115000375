@@ -1,24 +1,23 @@
+import java.io.File;
+import java.io.IOException;
 import java.util.*;
 
 public class wordfrequencymap{
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        String filePath = "divya.txt"; 
         Map<String, Integer> wordCount = new HashMap<>();
-
-        System.out.println("Enter a sentence:");
-        String input = scanner.nextLine();
-
-        String[] words = input.toLowerCase().replaceAll("[^a-z ]", "").split("\\s+");
-
-        for (String word : words) {
-            if (!word.isEmpty()) {
-                wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+        try {
+            Scanner fileScanner = new Scanner(new File(filePath));
+            while (fileScanner.hasNext()) {
+                String word = fileScanner.next().toLowerCase().replaceAll("[^a-z]", "");
+                if (!word.isEmpty()) {
+                    wordCount.put(word, wordCount.getOrDefault(word, 0) + 1);
+                }
             }
+            fileScanner.close();
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
         }
-        System.out.println("Word Frequencies:");
-        for (Map.Entry<String, Integer> entry : wordCount.entrySet()) {
-            System.out.println(entry.getKey() + " = " + entry.getValue());
-        }
-        scanner.close();
+        System.out.println("Word Frequencies: " + wordCount);
     }
 }
