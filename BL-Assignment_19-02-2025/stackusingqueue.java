@@ -1,6 +1,5 @@
 import java.util.LinkedList;
 import java.util.Queue;
-
 class stacksuingqueue{
     private Queue<Integer> q1 = new LinkedList<>();
     private Queue<Integer> q2 = new LinkedList<>();
@@ -21,7 +20,6 @@ class stacksuingqueue{
         }
         return q1.remove();
     }
-
     public int top() {
         if (q1.isEmpty()) {
             throw new RuntimeException("Stack is empty");
