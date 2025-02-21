@@ -242,3 +242,10 @@ Solved multiple questions realted to file input and File output reading.
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
+Day 21_21-02-2025
+
+Today's learning and practice is about Exception.
+Today, I explored and solved all the problems related to exception like throw and throws ,
+Arthematic exception, IllegalException ,User defined exception etc.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
