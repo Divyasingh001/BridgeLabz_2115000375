@@ -1,2 +1,5 @@
 hey ,this is divya
 and i am 22 years old
+name: divya singh
+age: 20
+favorite language: python
