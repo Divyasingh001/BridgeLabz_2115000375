@@ -232,3 +232,13 @@ Solved all the questions relaed to set ,queue,collections and its extended type.
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Day 20 -20-02-2025
+
+Today's learning and practice is about streams
+Today,I explored and solved all problems related to Streams like BufferedStream,
+FileInputReader,FileOutputReader,ByteArraystream and ByteArraystream.
+Solved multiple questions realted to file input and File output reading.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
