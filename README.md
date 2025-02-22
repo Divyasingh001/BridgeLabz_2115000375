@@ -249,3 +249,10 @@ Today, I explored and solved all the problems related to exception like throw an
 Arthematic exception, IllegalException ,User defined exception etc.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day 22_22-02-2025
+
+Today's learning and practice is all about regex and junit
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
