@@ -253,6 +253,27 @@ Arthematic exception, IllegalException ,User defined exception etc.
 Day 22_22-02-2025
 
 Today's learning and practice is all about regex and junit
+a. Learnt about Regular Expressions(Regex) and how it helps in pattern matching. 
+b. Solved questions on regex like password strength check, extraction of email, words, IPAddress, etc.
+c. Learnt about JUnit Framework and how it helps in testing.
+d. Solved questions on JUnit like BankAccountManagement testing, Calculator testing, etc.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+Day 23_24-02-2025
+
+Today's learning covers Java Reflection and Annotations, focusing on dynamic programming techniques.
+1. Java Reflection
+Retrieving class information
+Accessing and modifying fields/methods
+Dynamic object creation and invocation
+2. Custom Annotations
+Defining and using annotations
+Repeatable annotations
+Annotation-based validation and access control
+3. Advanced Applications
+Object mapping and JSON serialization
+Logging proxy and execution timing
+Dependency injection and caching
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
