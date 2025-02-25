@@ -277,3 +277,17 @@ Dependency injection and caching
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
  
+Day 24_25-02-2025
+
+Date: 25-02-2025
+Assignment: Submission of CSV Data Handling
+Zics Covered:
+
+Introduction to CSV
+Reading CSV Files 
+Writing CSV Files 
+Parsing CSV Data 
+Data Validation
+ Details: Assignment is completed with 15 questions. and stored in branch features_25-02-2025.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
