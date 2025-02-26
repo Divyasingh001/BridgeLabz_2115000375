@@ -1,29 +1,34 @@
 package org.example;
-import com.fasterxml.jackson.databind.MappingIterator;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.dataformat.csv.CsvMapper;
-import com.fasterxml.jackson.dataformat.csv.CsvSchema;
-import java.io.File;
-import java.io.IOException;
-import java.util.List;
-import java.util.Map;
-
-public class CSVToJSONConverter {
+import org.json.JSONArray;
+import org.json.JSONObject;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+public class CSVToJSON {
     public static void main(String[] args) {
         try {
-            File csvFile = new File("C:\\Users\\Divya Singh\\IdeaProjects\\Jsonquestions\\target\\data.json");
-            CsvMapper csvMapper = new CsvMapper();
-            CsvSchema csvSchema = CsvSchema.emptySchema().withHeader(); 
-
-            MappingIterator<Map<String, String>> mappingIterator =
-                    csvMapper.readerFor(Map.class).with(csvSchema).readValues(csvFile);
-            List<Map<String, String>> data = mappingIterator.readAll();
-            ObjectMapper jsonMapper = new ObjectMapper();
-            String jsonOutput = jsonMapper.writerWithDefaultPrettyPrinter().writeValueAsString(data);
-
-            System.out.println(jsonOutput);
-
-        } catch (IOException e) {
+            String csvFilePath = "C:\\Users\\Divya Singh\\IdeaProjects\\json2\\target\\Data";
+            String csvData = new String(Files.readAllBytes(Paths.get(csvFilePath))).trim();
+            if (csvData.isEmpty()) {
+                System.out.println("CSV file is empty.");
+                return;
+            }
+            String[] lines = csvData.split("\r?\n");
+            if (lines.length < 2) {
+                System.out.println("CSV must have at least one header and one data row.");
+                return;
+            }
+            String[] headers = lines[0].split(",");
+            JSONArray jsonArray = new JSONArray();
+            for (int i = 1; i < lines.length; i++) {
+                String[] values = lines[i].split(",");
+                JSONObject jsonObject = new JSONObject();
+                for (int j = 0; j < headers.length; j++) {
+                    jsonObject.put(headers[j].trim(), values.length > j ? values[j].trim() : "");
+                }
+                jsonArray.put(jsonObject);
+            }
+            System.out.println(jsonArray.toString(4));
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
