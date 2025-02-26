@@ -291,3 +291,14 @@ Data Validation
  Details: Assignment is completed with 15 questions. and stored in branch features_25-02-2025.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Day 25_26-02-2025
+
+Introduction to JSON
+Reading JSON Data 
+Writing JSON Data 
+Parsing JSON Data 
+JSON Schema Validation
+Details: Assignment is completed with 14 questions. and stored in branch features_26-02-2025.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
